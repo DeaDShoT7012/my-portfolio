@@ -9,7 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-
+    <!-- =============================== -->
+    <!-- <script>
+    history.pushState(null, null, location.href);
+    window.onpopstate = function () {
+    history.go(1);
+    };
+    </script> -->
     
 </head>
 <body>
@@ -19,9 +25,10 @@
         
     <div class="logo">folio<b>.</b></div>
     <ul id="sidemenu" class="navItems">
-    <li><a href="#home" >HOME</a></1i>
+    <li><a   href="#home" >HOME</a></1i>
     <li><a href="#about" >ABOUT</a></1i>
     <li><a href="#services">SERVICES</a></1li>
+    <li><a href="#portfolio">WORKS</a></1li>  
     <li><a href="#contact">CONTACT</a></1i>
         <i style="color: white;" class="fas fa-times" onclick="closemenu()"></i>
     </ul>
@@ -114,17 +121,39 @@
     </div>
 </div>
 <!-- -=---------------------------My Work--------------------------------------------------------- -->
-<!-- <div id="portfolio">
+<div id="portfolio">
     <div class="container">
-        <h1 class="subtitle">My Work</h1>
+        <h1 class="subtitle">My Works</h1>
         <div class="work-list">
             <div class="work">
-                <img src="" alt="">
+                <img src="./work1.png" alt="">
+                <div class="layer">
+                    <h3>Online Food Delivery App</h3>
+                    <p>The online food delivery websit that allows customers to order food online from a variety of restaurants and have it delivered to their doorstep.</p>
+                    <a href="https://www.linkedin.com/in/ajith-kg-623344260/recent-activity/shares/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
             </div>
+            <div class="work">
+                <img src="./work2.png" alt="">
+                <div class="layer">
+                    <h3>Find Weather</h3>
+                    <p>The website that provides up-to-date information on weather conditions in a particular location. Users can enter a city, zip code, or other location information to access current and forecasted weather data.</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./work3.png" alt="">
+                <div class="layer">
+                    <h3>Admin Dashboard</h3>
+                    <p>An admin dashboard is a platform that provides an overview of key performance indicators and data related to an organization's operations.</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
         </div>
 
     </div>
-</div> -->
+</div>
 
 <!-- ----------------------------------------contact----------------------------------------------------- -->
 <div id="contact">
@@ -139,7 +168,7 @@
                     <a href="https://www.linkedin.com/in/ajith-kg-623344260/"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://twitter.com/__DeaD_ShoT_"><i class="fa-brands fa-twitter"></i></a>
                 </div>
-                <a href="My Resume.pdf"><button class="btn">Download CV</button><a >
+                <a href="AJITH.pdf"><button class="btn">Download CV</button><a >
             </div>
             <div class="contact-right"></div>
             <form id="submit-form" action="">
@@ -163,10 +192,7 @@
     <div class="copyright">
         <p style="color: #19d26f;">All Rights Reserved &copy; &reg; DeaDShoT</p>
     </div>
-</footer>
-
-
-    
+</footer>    
 </body>
 <!-- -------------------------home--------------------------------- -->
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>

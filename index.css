@@ -6,7 +6,6 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 font-family: 'Poppins', sans-serif;
-
 }
 
 html{
@@ -373,12 +372,71 @@ button:hover{
 }
 /* -----------------------------------------------------porfolio -------------------------------------------*/
 
-/* #portfolio{
+#portfolio{
     padding: 80px 80px;
     background: #000;
     width: 100%;
-    color: white; 
-} */
+    color: #19d26f; 
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),#19d26f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: bolder;
+    margin-bottom: 20px;
+
+}
+.layer a{
+    margin-top: 20px;
+    color: #19d26f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
 
 /* ---------------------------------------------------contact----------------------------------------------------- */
 
@@ -493,6 +551,7 @@ opacity: 1;
 .nameheading{
     color: #19d26f;
 }
+
 /* ----------------------------------------------responsive--------------------------------- */
 
 @media only screen and (max-width:600px){
@@ -507,7 +566,7 @@ opacity: 1;
     }
     .multiText{
      font-size: 40px;
-     color: #000; 
+     color: black; 
     }
     p{
         font-size: 16px;
